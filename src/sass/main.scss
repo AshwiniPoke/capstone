@@ -1,0 +1,19 @@
+@import '../Layout/Navigation/navigation';
+@import './variable';
+@import './aem-grid';
+@import '../Layout/Footer/footer';
+@import '../Layout/Banner/banner';
+@import '../Pages/Product-listing/product';
+@import '../Pages/Product-detail/product-detail';
+@import '../Pages/Cart/shoppingCart';
+@import '../Pages/Home/homepage';
+
+.App{
+    margin:0%;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../Assets/Muli-Regular.ttf);
+}
+
