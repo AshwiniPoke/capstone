@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.bc802540.css",
-    "main.js": "/capstone/static/js/main.ada293b5.js",
+    "main.css": "/capstone/static/css/main.77c7de8e.css",
+    "main.js": "/capstone/static/js/main.50caef53.js",
     "static/js/787.3ecd7fac.chunk.js": "/capstone/static/js/787.3ecd7fac.chunk.js",
-    "static/media/home-heroImg.png": "/capstone/static/media/home-heroImg.28f99c0a0d7159872697.png",
+    "static/media/homebanner.png": "/capstone/static/media/homebanner.e381db1c14abfc717006.png",
     "static/media/heroImg.png": "/capstone/static/media/heroImg.87d722af75b33d528085.png",
     "static/media/home-sec4Img.png": "/capstone/static/media/home-sec4Img.2edb5a42eab5b4c8790a.png",
     "static/media/home-sec3Img.png": "/capstone/static/media/home-sec3Img.73fda5f56876b3b2bb06.png",
@@ -30,16 +30,16 @@
     "static/media/twitter.svg": "/capstone/static/media/twitter.3d9f31115be6b897b5d45c0aad4c1c1f.svg",
     "static/media/facebook (1).svg": "/capstone/static/media/facebook (1).1c9767c4a18f7f3321bdae3f6d8eacb4.svg",
     "static/media/heart.svg": "/capstone/static/media/heart.a907ab68d10229f05d705226b23d8bf2.svg",
+    "static/media/edit-2 (1).svg": "/capstone/static/media/edit-2 (1).93af904795b54e6811927c1764a1a29a.svg",
     "static/media/edit-2.svg": "/capstone/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/capstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
-    "static/media/chevron-right.svg": "/capstone/static/media/chevron-right.ee59aa22b6bf156e0eb4aea386711bbf.svg",
     "static/media/max-width_header.svg": "/capstone/static/media/max-width_header.5e071758c39e8343afbc081a005f0cab.svg",
-    "main.bc802540.css.map": "/capstone/static/css/main.bc802540.css.map",
-    "main.ada293b5.js.map": "/capstone/static/js/main.ada293b5.js.map",
+    "main.77c7de8e.css.map": "/capstone/static/css/main.77c7de8e.css.map",
+    "main.50caef53.js.map": "/capstone/static/js/main.50caef53.js.map",
     "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc802540.css",
-    "static/js/main.ada293b5.js"
+    "static/css/main.77c7de8e.css",
+    "static/js/main.50caef53.js"
   ]
 }
