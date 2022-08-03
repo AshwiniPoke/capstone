@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.77c7de8e.css",
-    "main.js": "/capstone/static/js/main.50caef53.js",
+    "main.css": "/capstone/static/css/main.0e60afcd.css",
+    "main.js": "/capstone/static/js/main.9f32eb03.js",
     "static/js/787.3ecd7fac.chunk.js": "/capstone/static/js/787.3ecd7fac.chunk.js",
+    "static/media/heroImg-desktop.png": "/capstone/static/media/heroImg-desktop.b7b82304076a63006b81.png",
     "static/media/homebanner.png": "/capstone/static/media/homebanner.e381db1c14abfc717006.png",
+    "static/media/home-boyonhill.png": "/capstone/static/media/home-boyonhill.33999102e9d1828ff8f6.png",
     "static/media/heroImg.png": "/capstone/static/media/heroImg.87d722af75b33d528085.png",
-    "static/media/home-sec4Img.png": "/capstone/static/media/home-sec4Img.2edb5a42eab5b4c8790a.png",
     "static/media/home-sec3Img.png": "/capstone/static/media/home-sec3Img.73fda5f56876b3b2bb06.png",
     "static/media/Muli-Regular.ttf": "/capstone/static/media/Muli-Regular.d08337b78196eb4754a0.ttf",
     "static/media/home3.png": "/capstone/static/media/home3.26313d8513c9a1e76558.png",
@@ -25,6 +26,7 @@
     "index.html": "/capstone/index.html",
     "static/media/shopping-bag.svg": "/capstone/static/media/shopping-bag.1ceb7d8208dd4937a06bd6a1ca592bf1.svg",
     "static/media/arrow-up.svg": "/capstone/static/media/arrow-up.bffb5a388e9ce654e32b9665d1dbed6d.svg",
+    "static/media/map-pin.svg": "/capstone/static/media/map-pin.195addc70f7290062e9dcaef4d61267c.svg",
     "static/media/twitter (1).svg": "/capstone/static/media/twitter (1).232117538bec0f6441a12cfefe8cc68b.svg",
     "static/media/arrow-down.svg": "/capstone/static/media/arrow-down.ad1e372bfba7126beaef93d275515815.svg",
     "static/media/twitter.svg": "/capstone/static/media/twitter.3d9f31115be6b897b5d45c0aad4c1c1f.svg",
@@ -34,12 +36,12 @@
     "static/media/edit-2.svg": "/capstone/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/capstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "static/media/max-width_header.svg": "/capstone/static/media/max-width_header.5e071758c39e8343afbc081a005f0cab.svg",
-    "main.77c7de8e.css.map": "/capstone/static/css/main.77c7de8e.css.map",
-    "main.50caef53.js.map": "/capstone/static/js/main.50caef53.js.map",
+    "main.0e60afcd.css.map": "/capstone/static/css/main.0e60afcd.css.map",
+    "main.9f32eb03.js.map": "/capstone/static/js/main.9f32eb03.js.map",
     "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77c7de8e.css",
-    "static/js/main.50caef53.js"
+    "static/css/main.0e60afcd.css",
+    "static/js/main.9f32eb03.js"
   ]
 }
