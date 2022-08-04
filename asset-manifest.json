@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.847b5231.css",
-    "main.js": "/capstone/static/js/main.916ad949.js",
+    "main.css": "/capstone/static/css/main.910fca93.css",
+    "main.js": "/capstone/static/js/main.18fe8bcb.js",
     "static/js/787.3ecd7fac.chunk.js": "/capstone/static/js/787.3ecd7fac.chunk.js",
     "static/media/heroImg-desktop.png": "/capstone/static/media/heroImg-desktop.b7b82304076a63006b81.png",
     "static/media/homebanner.png": "/capstone/static/media/homebanner.e381db1c14abfc717006.png",
@@ -23,9 +23,11 @@
     "static/media/trash-2.svg": "/capstone/static/media/trash-2.a3e697fde0ae7e80f40a3f3214ef433d.svg",
     "static/media/instagram (1).svg": "/capstone/static/media/instagram (1).aed30391d7ee47c71052492025e565cf.svg",
     "static/media/instagram.svg": "/capstone/static/media/instagram.098205e681981cff2deaa43da7f8afa7.svg",
+    "static/media/help-circle.svg": "/capstone/static/media/help-circle.6e768c3bac19f3986961e860b1d13f2d.svg",
     "index.html": "/capstone/index.html",
     "static/media/shopping-bag.svg": "/capstone/static/media/shopping-bag.1ceb7d8208dd4937a06bd6a1ca592bf1.svg",
     "static/media/arrow-up.svg": "/capstone/static/media/arrow-up.bffb5a388e9ce654e32b9665d1dbed6d.svg",
+    "static/media/check-square.svg": "/capstone/static/media/check-square.a1c88dd79736bc41bd7edcdb24326b51.svg",
     "static/media/map-pin.svg": "/capstone/static/media/map-pin.195addc70f7290062e9dcaef4d61267c.svg",
     "static/media/twitter (1).svg": "/capstone/static/media/twitter (1).232117538bec0f6441a12cfefe8cc68b.svg",
     "static/media/arrow-down.svg": "/capstone/static/media/arrow-down.ad1e372bfba7126beaef93d275515815.svg",
@@ -36,12 +38,12 @@
     "static/media/edit-2.svg": "/capstone/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/capstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "static/media/max-width_header.svg": "/capstone/static/media/max-width_header.5e071758c39e8343afbc081a005f0cab.svg",
-    "main.847b5231.css.map": "/capstone/static/css/main.847b5231.css.map",
-    "main.916ad949.js.map": "/capstone/static/js/main.916ad949.js.map",
+    "main.910fca93.css.map": "/capstone/static/css/main.910fca93.css.map",
+    "main.18fe8bcb.js.map": "/capstone/static/js/main.18fe8bcb.js.map",
     "787.3ecd7fac.chunk.js.map": "/capstone/static/js/787.3ecd7fac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.847b5231.css",
-    "static/js/main.916ad949.js"
+    "static/css/main.910fca93.css",
+    "static/js/main.18fe8bcb.js"
   ]
 }
