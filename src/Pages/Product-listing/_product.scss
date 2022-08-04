@@ -133,6 +133,7 @@ ul.pagination {
     position: absolute;
     background-color: white;
     z-index: 1;
+    height:70vh;
     padding-left: 1rem !important;
   }
 
@@ -141,6 +142,9 @@ ul.pagination {
     }
     .heroTxt{
         order:2;
+    }
+    .filtertext{
+      display:none;
     }
     .productImage{
         width:35vw;

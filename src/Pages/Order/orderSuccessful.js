@@ -8,6 +8,9 @@ const SuccessOrder = () => {
         return value.cart.item;
     });
 
+    const PaymentData = JSON.parse(localStorage.getItem('PaymentForm'));
+    const ShippingData = JSON.parse(localStorage.getItem('ShippingForm'));
+    const ContactData = JSON.parse(localStorage.getItem('ContactForm'));
 
 
     return (
@@ -21,11 +24,21 @@ const SuccessOrder = () => {
                             <p><b>Order Number #1700834</b></p>
                             <div className='aem-Grid aem-Grid--12'>
                                 <div className='aem-GridColumn aem-GridColumn--default--6'>
-                                    <p>Shipping Information</p>
+                                    <p><b>Shipping Information</b></p>
+                                    <small>{ContactData.email}</small><br />
+                                    <small>{ContactData.contact}</small><br />
+                                    <small>{ContactData.fname} {ContactData.lname}</small><br />
+                                    <small>{ContactData.stAddr}</small><br />
+                                    <small>{ContactData.city} {ContactData.state} {ContactData.zip}</small><br />
+                                    <small>{ContactData.country}</small><br />
                                 </div>
                                 <div className='aem-GridColumn aem-GridColumn--default--6'>
-                                    <p>Shipping Method</p>
-                                    <p>Payment Information</p>
+                                    <p><b>Shipping Method</b></p>
+                                    <small>{ShippingData.shippingMethod}</small><br /><br />
+
+                                    <p><b>Payment Information</b></p>
+                                    <small>{PaymentData.paymentMode}</small><br />
+                                <small>Visa ending in {PaymentData.cvv}</small><br />
                                 </div>
                             </div>
                             <div className='aem-Grid aem-Grid--12 '>

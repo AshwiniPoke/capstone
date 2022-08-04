@@ -102,12 +102,11 @@
     .quanBar{
         margin: -17% 0% 0% 40%    }
     .discount{
-        margin:4%;
-         padding: 2%;
+        margin:6%;
     }
     .border{
         padding:1rem 1rem 2rem 1rem;
-        width: 100vw;
+        width: 80vw !important;
     }
     .discrightalign {
         display: block;
@@ -119,9 +118,10 @@
     }
     .pricing{
         text-align: left;
+        margin-left: 0.5rem;
     }
     .totalSummary{
-       padding:2rem;
+       padding:1rem;
     }
     .checkoutBtn{
         margin-left: 3rem;

@@ -46,7 +46,7 @@ export const cartSlice = createSlice({
         );
 
         state.item = nextCartItems;
-      }
+      } 
        state.cartTotalAmount -= state.item[itemIndex].price;
       
 

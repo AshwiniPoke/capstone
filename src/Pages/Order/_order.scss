@@ -1,5 +1,5 @@
 .cartDataImage {
-    // height: 20vh;
+     height: 20vh;
     width: 9vw;
 }
 
@@ -56,4 +56,23 @@ h1 {
     opacity: 1;
     color:white;
     margin-top: 1rem;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .boxBorder{
+        width: 88vw !important;
+    }
+    .editColor{
+        display: none;
+    }
+    .alignLeft{
+        margin:1rem;
+    }
+    .cartDataImage{
+        width:28vw;
+    }
+    .successBox{
+        display:none;
+    }
 }

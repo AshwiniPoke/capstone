@@ -28,7 +28,7 @@ const Filters = ({ filterProduct }) => {
                 <p className='filtertext'>Clothing/ Woman's/ Outerwear</p>
                 <h3>Filters</h3>
                 <hr />
-              
+              <b>Categories</b>
 
                  {data.map((category) => {
                     return (

@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React  from 'react';
+import { useSelector, useDispatch } from "react-redux/es/exports";
+import { handleAction } from "../../Redux/cartSlice";
+import CheckoutPage from '../checkout/checkoutpage';
+import { useNavigate } from "react-router-dom";
+
+
 
 const ShippingPage = ({accorhandler2}) => {
 
     const initialValues = {shippingMethod:""};
     const[formValues, setFormValues] = useState(initialValues);
-       
+    const dispatch = useDispatch();
+    let navigate = useNavigate();
+
     const ContactData = JSON.parse(localStorage.getItem('ContactForm'));
 
         const handleChange = (e) => {
@@ -20,17 +28,30 @@ const ShippingPage = ({accorhandler2}) => {
         React.useEffect(() =>{
     localStorage.setItem("ShippingForm", JSON.stringify(formValues));
         },[formValues]);
+
+        const subTotal = useSelector((state) => state.cart.cartTotalAmount);
+
+    useEffect(() => {
+        dispatch(handleAction.getTotals())
+
+    }, [subTotal, dispatch])
+
+  
+
    
     return (
         <>
+        <h1 >Checkout</h1>
+            <img className="headerBorder" src={require('../../Images/max-width_header.svg').default}></img>
             <div className="aem-Grid aem-Grid--default--12 aem-Grid--phone--12 container-fluid">
-            <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 boxBorder'>
+            <div className='aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12'>
+            <div className='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 boxBorder'>
                     <div className='aem-Grid aem-Grid--12 localData'>
                         <div className='aem-GridColumn aem-GridColumn--default--10'>
                             <p>Shipping Information</p>
                         </div>
-                        <div className='aem-GridColumn aem-GridColumn--default--2 editInfo'>
-                            <img src={require('../../Images/edit-2 (1).svg').default}></img><span className='editColor'> Edit</span>
+                        <div className='aem-GridColumn aem-GridColumn--default--2 editInfo' >
+                            <img src={require('../../Images/edit-2 (1).svg').default} onClick={() => navigate(`/checkout`)}></img><span className='editColor'> Edit</span>
                         </div>
                     </div>
                     <div className="aem-Grid aem-Grid--12 alignLeft">
@@ -46,7 +67,7 @@ const ShippingPage = ({accorhandler2}) => {
                         </div>
                     </div>
                 </div><br />
-                <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 shippingForm">
+                <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 shippingForm">
                    
                     <p>2. Shipping Method</p>
                     <form onSubmit={handleSubmit}>
@@ -59,28 +80,29 @@ const ShippingPage = ({accorhandler2}) => {
                         <label htmlFor="nextDayDelivery">Next Day delivery (Next business days via FedEx) $53.61</label><br />
                     </div><br />
                     <div className="formbtn">
-                    <button type="submit" className="shopcollbtn" >CONTINUE TO PAYMENT</button>
+                    <button type="submit" className="btncheckout" >CONTINUE TO PAYMENT</button>
                     <button type="submit" className="btnphoneview" >CONTINUE</button>
                     </div>
                     </form>
                     <hr />
                     <p>3. Payment Information</p>
                 </div>
-                {/* <div className="aem-GridColumn aem-GridColumn--default--3  aem-GridColumn--phone--12 aem-GridColumn--tablet--12 SummaryBox">
+                </div>
+                <div className="aem-GridColumn aem-GridColumn--default--3  aem-GridColumn--phone--12 aem-GridColumn--tablet--12 totalSummary">
                     <div className="aem-Grid aem-Grid--12 ">
                         <div className="aem-GridColumn aem-GridColumn--default--12 border pricing">
                             <p ><b>Pricing summary</b></p>
-                            <p> Subtotal <span className="rightalign">$0</span></p>
+                            <p> Subtotal <span className="rightalign">${subTotal}</span></p>
                             <p>Coupon  <span className="rightalign">-$77.60</span></p>
                             <p>Gift Card  <span className="rightalign">-$100.00</span></p>
                             <p>Estimated Tax  <span className="rightalign">$23.28</span></p>
                             <p>Estimated shipping  <span className="rightalign">FREE</span></p>
-                            <p><b>Estimated Total<span className="rightalign">$0</span></b></p>
-                           
+                            <p><b>Estimated Total<span className="rightalign">${subTotal}</span></b></p>
+                            
                         </div>
 
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
     )

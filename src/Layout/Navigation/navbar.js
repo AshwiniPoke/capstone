@@ -5,6 +5,7 @@ import menu from '../../Images/burgerIcon.png';
 import { useSelector } from "react-redux/es/exports";
 import '../../sass/main.css';
 import { Link } from "react-router-dom";
+import Filter from '../../Pages/filter';
 
 
 const Navbar = () => {
@@ -26,10 +27,10 @@ const Navbar = () => {
                     return (
                         <>
 
-                  <img src={menu} alt="menu" className="aem-GridColumn aem-GridColumn--phone--1 menuicon"  />
-                              {/*     {
+                  <img src={menu} alt="menu" className="aem-GridColumn aem-GridColumn--phone--1 menuicon" onClick={showFilter} />
+                                  {
                             isShown && <Filter /> 
-                        } */}
+                        }
 
                             <a href="/capstone" className=" aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--6 aem-GridColumn--tablet--1 logo nav-items"><img src={logo} className="logoProp" alt="logo"></img>
                             </a>

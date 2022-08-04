@@ -47,8 +47,15 @@ label {
 .SummaryBox{
     margin-left: 3rem;
 }
-
-
+.btncheckout{
+    @include button;
+    background-color: #fff;
+    color: #E26A2C;
+    border: 1px solid #E26A2C;
+}
+.pricing{
+    margin:0.5rem;
+}
 @media screen and (min-width:320px) and (max-width:767px) {
     
 .input {
@@ -72,9 +79,9 @@ label {
 .btnphoneview{
     @include btnPhone;
 }
-// .shopcollbtn{
-//     display: none;
-// }
+.btncheckout{
+    display: none;
+}
 .pricing{
     width:80vw;
 }

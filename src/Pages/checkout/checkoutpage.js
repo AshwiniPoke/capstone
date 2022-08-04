@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import '../../sass/main.css';
-import { useNavigate } from "react-router-dom";
-import ShippingPage from '../Shipping/shipping';
+import { useSelector, useDispatch } from "react-redux/es/exports";
+import { handleAction } from "../../Redux/cartSlice";
 
 
 const CheckoutPage = ({accorhandler1}) => {
 
     const [isShown, setIsShown] = useState(true);
+    const dispatch = useDispatch();
 
     const initialValues = {email:"", contact:"", fname:"", lname:"", country:"", stAddr:"", stAddr2:"", state:"", city:"", zip:""};
     const[formValues, setFormValues] = useState(initialValues);
@@ -25,12 +26,20 @@ const CheckoutPage = ({accorhandler1}) => {
 localStorage.setItem("ContactForm", JSON.stringify(formValues));
     },[formValues]);
 
+    const subTotal = useSelector((state) => state.cart.cartTotalAmount);
+
+    useEffect(() => {
+        dispatch(handleAction.getTotals())
+
+    }, [subTotal, dispatch])
+
+
 
     return (
         <>
             <h1 >Checkout</h1>
             <img className="headerBorder" src={require('../../Images/max-width_header.svg').default}></img>
-            <div className="aem-Grid aem-Grid--default--12 container-fluid">
+            <div className="aem-Grid aem-Grid--default--12 aem-Grid--phone--12 container-fluid">
                 <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 checkoutForm">
                     <h2>Guest Checkout</h2>
 
@@ -72,7 +81,7 @@ localStorage.setItem("ContactForm", JSON.stringify(formValues));
                                 <label>Street Address <br />
                                     <input type="text" className="input" id="stAddr" name="stAddr" 
                                         value={formValues.stAddr} onChange={handleChange} />
-                                </label>
+                                </label><br />
                                 <label>City <br />
                                     <input type="text" className="input" placeholder="Altadena" id="city" name="city"
                                         value={formValues.city} onChange={handleChange} />
@@ -112,7 +121,7 @@ localStorage.setItem("ContactForm", JSON.stringify(formValues));
 
                         </div>
                         <div className="formbtn">
-                        <button type="submit" className="shopcollbtn" style={{width:"250px",textAlign:"center"}}>CONTINUE TO SHIPPING METHOD</button>
+                        <button type="submit" className="btncheckout" style={{width:"250px",textAlign:"center"}}>CONTINUE TO SHIPPING METHOD</button>
                         <button type="submit" className="btnphoneview" >CONTINUE</button>
                         </div>
                     </form>
@@ -127,17 +136,17 @@ localStorage.setItem("ContactForm", JSON.stringify(formValues));
                             <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
                                 <p> Sign In for Express Checkout </p> </div>
                             <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                                <button className="shopcollbtn" style={{ width: "7rem", margin: "1rem" }}>Sign In</button></div>
+                                <button className="btncheckout" style={{ width: "7rem", margin: "1rem" }}>Sign In</button></div>
                         </div>
                         <br />
                         <div className="aem-GridColumn aem-GridColumn--default--12 border pricing" >
                             <p ><b>Pricing summary</b></p>
-                            <p> Subtotal <span className="rightalign">$0</span></p>
+                            <p> Subtotal <span className="rightalign">${subTotal}</span></p>
                             <p>Coupon  <span className="rightalign">-$77.60</span></p>
                             <p>Gift Card  <span className="rightalign">-$100.00</span></p>
                             <p>Estimated Tax  <span className="rightalign">$23.28</span></p>
                             <p>Estimated shipping  <span className="rightalign">FREE</span></p>
-                            <p><b>Estimated Total<span className="rightalign">$0</span></b></p>
+                            <p><b>Estimated Total<span className="rightalign">${subTotal}</span></b></p>
 
                         </div>
                     </div>
