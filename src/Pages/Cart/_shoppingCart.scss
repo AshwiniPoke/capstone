@@ -12,7 +12,7 @@
 .carousalImg {
     height: 28vh;
     width: 13vw;
-    border: 1px solid grey;
+    border: 1px solid #B5B7BC;
     padding: 0.5rem;
   }
   
@@ -37,27 +37,28 @@
     margin: 2rem;
 }
 .border{
-    border: 1px solid gray;
+    border: 1px solid #B5B7BC;
     margin: 0%;
     padding: 1rem;
     width:50vw;
+    text-align: left;
 }
 .quanBar{
     margin-top:4rem;
 }
 .quantity-minus {
-    border: 1px solid grey;
+    border: 1px solid #B5B7BC;
     border-radius: 50%;
     margin: 2px;
 }
 .quantity-plus{
-    border: 1px solid grey;
+    border: 1px solid #B5B7BC;
     border-radius: 50%;
     margin: 2px;
 }
 .paypal{
-    margin-top: 0.5rem;
-    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-left: 4.3rem;
 }
 .quantity{
     width: 4rem;
@@ -66,10 +67,11 @@
 .cartProdDetails{
     margin:0%;
 }
-// .checkoutBtn{
-//     @include button;
-//     background-color: red;
-// }
+.checkoutBtn{
+    @include button;
+    color:white;
+    margin-left: 5rem;
+}
 .editremove{
     padding-left: 1rem;
 }
@@ -89,7 +91,11 @@
     .imageprops{
         height: 20vh;
         width: 35vw;
-    }   
+    }  
+    .phoneDots{
+        margin-top: -0.5rem;
+        
+    } 
     .Cart{
         margin:0%;
     }
@@ -117,10 +123,9 @@
     .totalSummary{
        padding:2rem;
     }
-    // .checkoutBtn{
-    //     @include button;
-    //     background-color: $btn-bgcolor;
-    // }
+    .checkoutBtn{
+        margin-left: 3rem;
+    }
     .quantity{
         width: 4rem;
         border-radius: 5px;
@@ -130,13 +135,18 @@
     }
 }
 
+@media screen and (min-width:768px) {
+    .phoneDots{
+        display:none;
+    }
+}
 
 @media screen and (min-width:768px) and (max-width:1023px) {
    .imageprops{
     height:10vh;
    }
    .border{
-    border: 1px solid gray;
+    border: 1px solid #B5B7BC;
     margin: 0%;
     padding: 1rem;
 }

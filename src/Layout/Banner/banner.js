@@ -8,11 +8,11 @@ const Banner = () =>{
                {heroBanner.map(element => {
                     return (
                         <>
-                            <div className=" aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 heroTxt">
-                                <h1 className="whiteTxt">Men's Outerwear</h1>
+                            <div className=" aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 heroTxt">
+                                <h1 className="whiteTxt">Men's <br />Outerwear</h1>
                                 <hr className="heroHr" />
                             </div>
-                            <div className="heroImg aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 heroBanner">
+                            <div className="heroImg aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 heroBanner">
                                 <img src={element.heroimg} alt='HeroBanner' className="herobanner"></img>
                             </div>
                         </>

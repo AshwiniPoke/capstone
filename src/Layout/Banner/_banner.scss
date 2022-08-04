@@ -1,22 +1,23 @@
 .heroTxt {
     background-color: black;
-    height: 22rem;
+    height: 20rem;
     width: 34rem;
     // padding-top: 3vh;
 }
 
 .whiteTxt {
     color: white;
-    padding-top: 20vh;
+    padding-top: 12vh;
+    font-size: 40px;
 }
 
 hr.heroHr {
-    width: 10%;
-    border: 1px solid blue;
+    width: 15%;
+    border: 2px solid #E26A2C;
 }
 
 .herobanner {
-    width: 60vw;
-    height: 48vh;
+    width: 67vw;
+    height: 46vh;
     margin: 0.5rem 2.2rem 0rem 0rem;
 }

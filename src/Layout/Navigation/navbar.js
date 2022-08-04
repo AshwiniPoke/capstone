@@ -1,7 +1,7 @@
 import React , {useState} from "react";
 import { navbarList } from '../Data.js';
 import logo from '../../Images/logo.png';
-import menu from '../../Images/menuicon.png';
+import menu from '../../Images/burgerIcon.png';
 import { useSelector } from "react-redux/es/exports";
 import '../../sass/main.css';
 import { Link } from "react-router-dom";
@@ -31,17 +31,17 @@ const Navbar = () => {
                             isShown && <Filter /> 
                         } */}
 
-                            <a href="/capstone" className="nav-items aem-GridColumn aem-GridColumn--default--2 logo aem-GridColumn--tablet--1"><img src={logo} alt="logo"></img>
+                            <a href="/capstone" className=" aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--6 aem-GridColumn--tablet--1 logo nav-items"><img src={logo} className="logoProp" alt="logo"></img>
                             </a>
 
-                            <ul className="nav-items aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--hide aem-GridColumn--tablet--8">
-                                <li className="nav-link">{navElement.navlink1}</li>&nbsp;&nbsp;
+                            <ul className="nav-items aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--hide aem-GridColumn--tablet--8">
+                                <li className="nav-link navBorder">{navElement.navlink1}</li>&nbsp;&nbsp;
                                 <li className="nav-link">{navElement.navlink2}</li>&nbsp;&nbsp;
                                 <li className="nav-link">{navElement.navlink3}</li>&nbsp;&nbsp;
                                 <li className="nav-link">{navElement.navlink4}</li>&nbsp;&nbsp;
                                 <li className="nav-link">{navElement.navlink5}</li>&nbsp;&nbsp;
                             </ul>
-                            <ul className="nav-items align-right aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--3">
+                            <ul className="nav-items align-right aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3">
 
                                 {/* <li className="nav-link"><img src={require('../../Images/search.svg').default} alt="search"></img><span className="linkUnderline"> {navElement.text1}</span> </li>
                                 <li className="nav-link "><img src={require('../../Images/user.svg').default} alt="user" className="linkUnderline"></img><span className="linkUnderline">{navElement.text2}</span></li> */}

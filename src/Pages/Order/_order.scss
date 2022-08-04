@@ -1,0 +1,59 @@
+.cartDataImage {
+    // height: 20vh;
+    width: 9vw;
+}
+
+.reviewCartItems {
+    display: -webkit-box;
+    // display:flex;
+    // flex-direction: column;
+}
+
+.alignLeft {
+    text-align: left;
+    margin-left: 2rem;
+}
+.leftmargin{
+    margin-left: 10vw;
+}
+.placeOrderBtn {
+    @include button;
+    color: white;
+}
+
+.headerBorder {
+    width: 5rem;
+    align-items: center;
+    height: 5px;
+}
+.editColor{
+    color:#E26A2C;
+}
+.editInfo{
+    margin-top:0.7rem;
+}
+.localData{
+    margin-left: 1rem;
+}
+
+h1 {
+    margin-bottom: 0%;
+}
+.boxBorder{
+    border: 1px solid #D1D3D6;
+    text-align: left;
+    margin:0.5rem;
+}
+
+.successBox {
+    width: 21vw !important;
+    // height: 351px;
+    padding:3rem;
+    background: var(--primary-d1) 0% 0% no-repeat padding-box;
+    background: #FF8243 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
+    opacity: 1;
+    color:white;
+    margin-top: 1rem;
+}

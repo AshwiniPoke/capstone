@@ -1,0 +1,96 @@
+.checkoutForm {
+    text-align: left !important;
+}
+
+.input {
+    width: 23rem;
+    height: 1.8rem;
+    text-align: left;
+    border: 2px solid #B5B7BC !important;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+.stateinput{  
+    width: 12rem;
+     height: 2rem;
+    text-align: left;
+    border: 2px solid #B5B7BC !important;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+.zipinput{
+     height: 1.8rem;
+    text-align: left;
+    border: 2px solid #B5B7BC !important;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+h2{
+    margin:0%;
+}
+
+label {
+    line-height: 1.5rem;
+}
+.container-fluid{
+    margin:1rem 7rem 1rem 7rem;
+}
+.signInBox{
+    border : 1px solid #B5B7BC;
+}
+.formbtn{
+    text-align: center;
+}
+.SummaryBox{
+    margin-left: 3rem;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    
+.input {
+    width: 90vw;
+    height: 1.8rem;
+    text-align: left;
+    border: 2px solid #B5B7BC !important;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+.container-fluid{
+    margin: 1rem;
+}
+.zipinput{
+    width:90vw;
+}
+.stateinput{
+    width:90vw;
+}
+.btnphoneview{
+    @include btnPhone;
+}
+// .shopcollbtn{
+//     display: none;
+// }
+.pricing{
+    width:80vw;
+}
+.radio{
+    width:90vw;
+}
+.shippingInfo{
+    width:90vw;
+}
+}
+
+
+@media screen and (min-width:1024px)  {
+    .btnphoneview{
+    display: none;
+}
+
+
+}

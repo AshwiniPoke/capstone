@@ -7,6 +7,11 @@
 @import '../Pages/Product-detail/product-detail';
 @import '../Pages/Cart/shoppingCart';
 @import '../Pages/Home/homepage';
+@import './mixin';
+@import '../Pages/checkout/checkout';
+@import '../Pages/Shipping/shipping';
+@import '../Pages/Payment/payment';
+@import '../Pages/Order/order';
 
 .App{
     margin:0%;
@@ -16,4 +21,7 @@
     font-family: Muli;
     src: url(../Assets/Muli-Regular.ttf);
 }
-
+// .container{
+//     margin-left:6vw;
+//     margin-right:6vw;
+// }

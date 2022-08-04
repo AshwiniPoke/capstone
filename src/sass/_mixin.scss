@@ -1,0 +1,24 @@
+@mixin button {
+    top: 1359px;
+    left: 640px;
+    width: 220px;
+    height: 40px;
+    background: var(--primary-brand) 0% 0% no-repeat padding-box;
+    background: #E26A2C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #39373729;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin btnPhone {
+    width: 192px;
+    height: 40px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #D4703D;
+    opacity: 1;
+    color: #D4703D;
+    margin-left: 5.6rem;
+
+}

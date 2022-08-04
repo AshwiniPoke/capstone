@@ -6,16 +6,21 @@ import {Route, Routes} from 'react-router-dom';
 import ProductDetail from './Pages/Product-detail/product-detail';
 import ShoppingCart from './Pages/Cart/ShoppingCart';
 import Home from './Pages/Home/homepage';
+import Checkout from './Pages/checkout/checkout';
+import SuccessOrder from './Pages/Order/orderSuccessful';
+
 function App() {
   return (
     <div className="App">
     <Navbar />
     <Routes>
       <Route exact path="/" element={<Home />} />
-      {/* <Route exact path="/" element={<Product />} /> */}
+      <Route exact path="/products" element={<Product />} />
       <Route exact path="/products/:id" element={<ProductDetail />}/>
       <Route exact path="/cart" element={<ShoppingCart />}/>
-
+      <Route exact path="/checkout" element={<Checkout />} />
+      <Route exact path="/ordersuccess" element={<SuccessOrder />} />
+     
     </Routes>
     <Footer />
     </div>

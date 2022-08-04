@@ -1,4 +1,4 @@
-@import '../../sass/button';
+@import '../../sass/mixin';
 @import '../../sass/variable';
 
 .sideImg {
@@ -43,8 +43,9 @@
 }
 
 .AddToCartBtn {
-    background-color: red;
     @include button;
+    color:#fff;
+    margin-left: 2rem;
 }
 
 .productDetailContainer {
@@ -54,14 +55,17 @@
 input {
     text-align: center;
 }
-
-
+@media screen and (min-width:768px)  {
+.imgSliderPhone{
+    display:none;
+}
+}
 @media screen and (min-width:320px) and (max-width:767px) {
     .sideImg {
         display: none;
     }
 
-    .mainImg {
+    .imgSliderPhone {
         width: 85vw;
         height: 50vh;
     }
