@@ -6,10 +6,13 @@ import { useSelector } from "react-redux/es/exports";
 import '../../sass/main.css';
 import { Link } from "react-router-dom";
 import Filter from '../../Pages/filter';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Navbar = () => {
     const [isShown, setIsShown] = useState(false);
+    let navigate = useNavigate();
 
     const showFilter = event => {
         setIsShown(current => !current);
@@ -36,11 +39,11 @@ const Navbar = () => {
                             </a>
 
                             <ul className="nav-items aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--hide aem-GridColumn--tablet--8">
-                                <li className="nav-link navBorder">{navElement.navlink1}</li>&nbsp;&nbsp;
-                                <li className="nav-link">{navElement.navlink2}</li>&nbsp;&nbsp;
-                                <li className="nav-link">{navElement.navlink3}</li>&nbsp;&nbsp;
-                                <li className="nav-link">{navElement.navlink4}</li>&nbsp;&nbsp;
-                                <li className="nav-link">{navElement.navlink5}</li>&nbsp;&nbsp;
+                                <li className="nav-link" onClick={() => navigate(`/`)}>{navElement.navlink1}</li>&nbsp;&nbsp;
+                                <li className="nav-link" onClick={() => navigate(`/products`)}>{navElement.navlink2}</li>&nbsp;&nbsp;
+                                <li className="nav-link" onClick={() => navigate(`/products`)}>{navElement.navlink3}</li>&nbsp;&nbsp;
+                                <li className="nav-link" onClick={() => navigate(`/products`)}>{navElement.navlink4}</li>&nbsp;&nbsp;
+                                <li className="nav-link" onClick={() => navigate(`/products`)}>{navElement.navlink5}</li>&nbsp;&nbsp;
                             </ul>
                             <ul className="nav-items align-right aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3">
 

@@ -43,13 +43,13 @@ const SuccessOrder = () => {
                             </div>
                             <div className='aem-Grid aem-Grid--12 '>
                                 <p>{cartData.length} items in your order</p>
-                                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--phone--6 aem-GridColumn--tablet--6 reviewCartItems" >
+                                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--tablet--6 singleOrderItem" >
                                     {cartData.map((value) => {
                                         console.log("cart values", value);
 
                                         return (
                                             <>
-                                                <div className='aem-Grid aem-Grid--12' style={{ display: "contents" }}>
+                                                <div className='aem-Grid aem-Grid--12 item1' >
                                                     <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
                                                         <img src={value.image} className="cartDataImage" alt="prodImages"></img>
                                                     </div>

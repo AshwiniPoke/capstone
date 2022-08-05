@@ -60,7 +60,12 @@ export default function ShoppingBag() {
             <h1>Your Shopping Bag</h1>
             <img className="headerBorder" src={require('../../Images/max-width_header.svg').default}></img>
           
-
+            {
+      cartData.length === 0 ? (
+        <>
+        <p className='cartEmpty'>Your Cart is Empty!</p>
+       
+        </>):( 
 
             <div className="aem-Grid aem-Grid--12 Cart">
                 <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 aem-GridColumn--tablet--12">
@@ -98,8 +103,8 @@ export default function ShoppingBag() {
                                     </div>
                                     <div className="aem-GridColumn aem-GridColumn--default--3 editremove">
                                         <p><img src={require("../../Images/edit-2.svg").default} alt="editProd"></img> Edit here</p>
-                                        <p><img src={require("../../Images/trash-2.svg").default} alt="removeProd"
-                                            onClick={() => { return dispatch(handleAction.removeFromCart(value.id)) }}></img> Remove </p>
+                                        <p onClick={() => { return dispatch(handleAction.removeFromCart(value.id)) }}><img src={require("../../Images/trash-2.svg").default} alt="removeProd"
+                                            ></img> Remove </p>
                                         <p><img src={require("../../Images/heart.svg").default} alt="Prod"></img> Save for later</p>
 
                                     </div>
@@ -138,5 +143,7 @@ export default function ShoppingBag() {
                 </div>
             </div>
 
-        </>)
+        )}
+        </>
+    )          
 }

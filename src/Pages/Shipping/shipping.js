@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const ShippingPage = ({accorhandler2}) => {
 
-    const initialValues = {shippingMethod:""};
+    const initialValues = {shippingMethod:"Standard Shipping Est. delivery in 4 - 8 business days FREE"};
     const[formValues, setFormValues] = useState(initialValues);
     const dispatch = useDispatch();
     let navigate = useNavigate();

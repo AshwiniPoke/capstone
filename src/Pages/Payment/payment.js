@@ -6,7 +6,7 @@ import { handleAction } from "../../Redux/cartSlice";
 
 const Payment = ({ accorhandler3 }) => {
 
-    const initialValues = { nameOnCard: "", cardNumber: "", expiration: "", cvv: "" };
+    const initialValues = { nameOnCard: "", cardNumber: "", expiration: "", cvv: "4567" };
     const [formValues, setFormValues] = useState(initialValues);
     const dispatch = useDispatch();
 

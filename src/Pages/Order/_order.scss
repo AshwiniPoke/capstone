@@ -1,21 +1,27 @@
 .cartDataImage {
-     height: 20vh;
+    height: 20vh;
     width: 9vw;
 }
 
-.reviewCartItems {
-    display: -webkit-box;
-    // display:flex;
+.singleOrderItem {
+    display: -webkit-box;;
+    // justify-content: space-between;
+    // padding-top: 24px;
     // flex-direction: column;
 }
 
+// .item1 {
+//     display: flex;
+// }
 .alignLeft {
     text-align: left;
     margin-left: 2rem;
 }
-.leftmargin{
+
+.leftmargin {
     margin-left: 10vw;
 }
+
 .placeOrderBtn {
     @include button;
     color: white;
@@ -26,53 +32,72 @@
     align-items: center;
     height: 5px;
 }
-.editColor{
-    color:#E26A2C;
+
+.editColor {
+    color: #E26A2C;
 }
-.editInfo{
-    margin-top:0.7rem;
+
+.editInfo {
+    margin-top: 0.7rem;
 }
-.localData{
+
+.localData {
     margin-left: 1rem;
 }
 
 h1 {
     margin-bottom: 0%;
 }
-.boxBorder{
+
+.boxBorder {
     border: 1px solid #D1D3D6;
     text-align: left;
-    margin:0.5rem;
+    margin: 0.5rem;
 }
 
 .successBox {
     width: 21vw !important;
     // height: 351px;
-    padding:3rem;
+    padding: 3rem;
     background: var(--primary-d1) 0% 0% no-repeat padding-box;
     background: #FF8243 0% 0% no-repeat padding-box;
     border: 1px solid #D1D3D6;
     border-radius: 2px;
     opacity: 1;
-    color:white;
+    color: white;
     margin-top: 1rem;
 }
 
 
 @media screen and (min-width:320px) and (max-width:767px) {
-    .boxBorder{
+    .boxBorder {
         width: 88vw !important;
     }
-    .editColor{
+
+    .editColor {
         display: none;
     }
-    .alignLeft{
-        margin:1rem;
+
+    .alignLeft {
+        margin: 1rem;
     }
-    .cartDataImage{
-        width:28vw;
+
+    .cartDataImage {
+        width: 28vw;
     }
-    .successBox{
-        display:none;
+
+    .successBox {
+        display: none;
+    }
+
+    .singleOrderItem {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        flex-direction: column;
+    }
+
+    .item1 {
+        display: flex;
     }
 }

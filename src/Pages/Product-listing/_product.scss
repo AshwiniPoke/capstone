@@ -11,10 +11,29 @@
 }
 
 .productImage {
-  height: 200px;
-  width: 50%;
-  border: 1px solid gray;
-  padding: 5px;
+  background-color: #f3f3f3;
+  border: 1px solid #e5e5e7;
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+  margin: 0;
+  padding: 10px;
+
+}
+.productList{
+  padding-right: 4rem;
+}
+.card {
+  padding-right: 2em;
+}
+
+.card figure img {
+  background-color: initial;
+  height: 280px;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+  opacity: 1;
 }
 
 .Filter {
@@ -22,16 +41,15 @@
   padding-left: 5rem;
 }
 
-
-
 .card {
   cursor: pointer;
+
 }
 
 .prodTitle {
   font-size: 16px;
   text-align: left;
-  margin: 0 0 0 5rem;
+  margin: 0%;
 
 }
 
@@ -43,12 +61,12 @@
   margin: 0%;
   font-size: 16px;
   text-align: left;
-  margin-left: 5rem;
+  
 }
 
 .heartIcon {
   float: left;
-  margin-left: 5rem;
+ 
 }
 
 .resultcount {
@@ -61,7 +79,8 @@
 
 .Filter {
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
 }
 
 ul.pagination {
@@ -82,28 +101,9 @@ ul.pagination {
   }
 }
 
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
-.loading-spinner {
-  width: 50px;
-  height: 50px;
-  border: 10px solid #f3f3f3;
-  /* Light grey */
-  border-top: 10px solid #383636;
-  /* Black */
-  border-radius: 50%;
-  animation: spinner 1.5s linear infinite;
-}
-
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
   .phoneFilters {
     display: none;
   }
@@ -111,8 +111,9 @@ ul.pagination {
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
 
-  .colorFilterImg {
-    width: 10rem;
+  .card figure img {
+    height: 10rem!important;
+    max-width: 100%;
   }
 
   .filtertext {
@@ -122,10 +123,14 @@ ul.pagination {
   .Filter {
     padding-left: 3rem !important;
   }
-  
+  .card{
+    height: 18rem;
+    padding: 0 11px 16px 0;
+  }
+
 }
 
-@media only screen and (min-width:320px) and ( max-width:768px) {
+@media only screen and (min-width:320px) and (max-width:768px) {
 
   .Filter {
     margin-top: 3rem;
@@ -133,63 +138,78 @@ ul.pagination {
     position: absolute;
     background-color: white;
     z-index: 1;
-    height:70vh;
+    height: 70vh;
     padding-left: 1rem !important;
   }
+  .productList{
+    padding:0% !important;
+  }
 
-     .heroBanner{
-        order:1;
-    }
-    .heroTxt{
-        order:2;
-    }
-    .filtertext{
-      display:none;
-    }
-    .productImage{
-        width:35vw;
-    }
-   .sortBy{
-    display:none;
-   }
-   .resultcount{
+  .heroBanner {
+    order: 1;
+  }
+
+  .heroTxt {
+    order: 2;
+  }
+
+  .filtertext {
+    display: none;
+  }
+  .card {
+    padding: 0.5em;
+  }
+  // .productImage {
+  //   width: 35vw;
+  // }
+
+  .sortBy {
+    display: none;
+  }
+
+  .resultcount {
     text-align: center !important;
-   }
+  }
 
-   .heroImg{
+  .heroImg {
     display: flex;
     flex-direction: column;
-   }
-   .herobanner{
+  }
+
+  .herobanner {
     width: 100vw;
     height: 12rem;
     margin: 0%;
     padding: 0%;
 
-   }
-   .heroTxt{
+  }
+
+  .heroTxt {
     height: 10rem;
     width: 21rem !important;
     margin-top: -10%;
-    margin-left: 2.5rem;
-   }
-   .whiteTxt{
+    margin-left: 2rem;
+  }
+
+  .whiteTxt {
     padding-top: 0vh;
-   }
-   .prodTitle {
-   margin-left: 1.5rem;
-   
-}
+  }
 
-.price{
-    margin-left:1.5rem;
-   
-}
-.heartIcon{
-   margin-left: 1.5rem;
-}
-.phoneFilters{
-  margin-top: 0.5rem;
-}
-}
+  // .prodTitle {
+  //   margin-left: 1.5rem;
 
+  // }
+
+  // .price {
+  //   margin-left: 1.5rem;
+
+  // }
+
+  // .heartIcon {
+  //   margin-left: 1.5rem;
+  // }
+
+  .phoneFilters {
+    margin-top: 0.5rem;
+  }
+}

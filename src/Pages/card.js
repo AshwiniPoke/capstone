@@ -26,7 +26,9 @@ export default function Card({ data }) {
                 return (
                     <>
                         <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn aem-GridColumn--phone--6 aem-GridColumn--tablet--6 card " onClick={() => navigate(`/products/${id}`)}  >
-                            <img className="productImage" src={product.image} alt="Product Image" />
+                           <figure className="productImage">
+                            <img src={product.image} alt="Product Image" />
+                            </figure>
                             <p className='prodTitle'>{splitTitle}</p>
                             <p className="price">${product.price}</p>
                             <img className='heartIcon' src={require('../Images/heart.svg').default} alt='icon' />

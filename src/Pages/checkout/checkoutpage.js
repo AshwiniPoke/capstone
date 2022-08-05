@@ -9,7 +9,7 @@ const CheckoutPage = ({accorhandler1}) => {
     const [isShown, setIsShown] = useState(true);
     const dispatch = useDispatch();
 
-    const initialValues = {email:"", contact:"", fname:"", lname:"", country:"", stAddr:"", stAddr2:"", state:"", city:"", zip:""};
+    const initialValues = {email:"q_farhan@gmail.com", contact:"+1 (555) 229-3367", fname:"Qadim", lname:"Farhan", country:"United States", stAddr:"1098 Wapello Street", stAddr2:"", state:"California", city:"Altadena", zip:"91001"};
     const[formValues, setFormValues] = useState(initialValues);
 
     const handleChange = (e) => {

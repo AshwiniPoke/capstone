@@ -26,7 +26,7 @@
     text-decoration: underline;
 }
 .saveShareBtn{
-    margin-left: 7vw;
+    margin-left: 3.5vw;
 }
 
 .sizeOptions {
@@ -45,7 +45,6 @@
 .AddToCartBtn {
     @include button;
     color:#fff;
-    margin-left: 2rem;
 }
 
 .productDetailContainer {
@@ -63,6 +62,13 @@ input {
 @media screen and (min-width:320px) and (max-width:767px) {
     .sideImg {
         display: none;
+    }
+    .sliderImg{
+        width:90vw;
+        height:49vh;
+    }
+    .AddToCartBtn{
+        margin-left: 15vw;
     }
 
     .imgSliderPhone {

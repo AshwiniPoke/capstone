@@ -74,17 +74,19 @@ const Product = () => {
         <>
             <div className="container aem-Grid aem-Grid--12">
                 <Banner />
+                </div>
+                <div className="container aem-Grid aem-Grid--12 ">
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--phone--hide filters">
                     < Filters filterProduct={filterProduct} />
                 </div>
-                <div className=" aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+                <div className=" aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 productList">
                     {
                         loading ? <h1 style={{ fontSize: "62px" }}>Loading...</h1> :
                             <>
                                 <div className='aem-Grid aem-Grid--12 phoneFilters aem-Grid--default--hide'>
                                     <img src={require('../../Images/sliders.svg').default} alt='icon' /> <span>Filter results</span>&nbsp;&nbsp;&nbsp;
                                     <img src={require('../../Images/arrow-up.svg').default} alt='icon' />
-                                    <img src={require('../../Images/arrow-down.svg').default} alt='icon' /> <span>Sort products</span>
+                                    <img src={require('../../Images/arrow-down.svg').default} alt='icon' /> <span onClick={()=>{return(data.sort((a, b) => a.price - b.price))}}>Sort products</span>
 
                                 </div>
                                 <div className='aem-Grid aem-Grid--12'>
@@ -100,7 +102,7 @@ const Product = () => {
                                 </div>
 
 
-                                <div className='aem-Grid aem-Grid--12'>
+                                <div className='aem-Grid aem-Grid--12 '>
                                     <Card data={data} loading={loading} ></Card>
                                 </div>
                             </>}

@@ -10,6 +10,8 @@ import icon4 from '../../Images/detailsIcon4.png';
 import color from '../../Images/color2.png';
 import Carousel from "react-multi-carousel";
 import SimpleImageSlider from "react-simple-image-slider";
+import ImageGallery from 'react-image-gallery';
+import SimpleSlider from './image-slider';
 
 const ProductDetail = () => {
 
@@ -86,13 +88,14 @@ const ProductDetail = () => {
                         <div className='aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--hide aem-GridColumn--tablet--6'>
                             <img src={data.image} className="mainImg" alt="main"></img></div>
                         <div className='aem-GridColumn aem-GridColumn--phone--12 imgSliderPhone'>
-                            <SimpleImageSlider
+                            <SimpleSlider data={data}/>
+                            {/* <SimpleImageSlider
                                 width={350}
                                 height={380}
                                 images={images}
                                 showBullets={true}
                                 showNavs={false}
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
@@ -103,14 +106,14 @@ const ProductDetail = () => {
                     {/* <p>{data.rating.rate}</p> */}
                     <p><small>{data.description}<span className='ReadMore'> Read more</span></small></p>
                     <hr />
-                    <p><b>Color</b></p>
+                    {/* <p><b>Color</b></p>
                     <img src={color} alt="colorpallet" />
                     <p><b>Size</b></p>
                     <button className='sizeOptions' aria-label='SizeXS'><small>XS</small></button>
                     <button className='sizeOptions' aria-label='SizeS'><small>S</small></button>
                     <button className='sizeOptions' aria-label='SizeM'><small>M</small></button>
                     <button className='sizeOptions' aria-label='SizeL'><small>L</small></button>
-                    <button className='sizeOptions' aria-label='SizeXL'><small>XL</small></button>
+                    <button className='sizeOptions' aria-label='SizeXL'><small>XL</small></button> */}
                     <p><b>Quantity</b></p>
                     <div> <button className='quantity-minus' aria-label='DecQuantity' onClick={decNum}> - </button>
                         <input type="text" className='quantity' value={num} onChange={handleChange} aria-label="quantity" />

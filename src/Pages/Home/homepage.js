@@ -44,20 +44,20 @@ const Home = () => {
                 <div className="aem-GridColumn aem-GridColumn--default--10 Imagetopmargin">
                     <div className="aem-Grid aem-Grid--12 aem-Grid--phone--12 aem-Grid--tablet--12">
                         <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--3">
-                            <img src={home1} alt="1" className="ImgWidth"></img>
-                            <div className="ImgBottom" style={{marginTop:"-75px"}}>Shop Women<p><small>Lorem ipsum dolor sit amet</small></p></div>
+                            <img src={home1} alt="1" className="ImgWidth" onClick={() => navigate(`/products`)}></img>
+                            <div className="ImgBottom" style={{marginTop:"-75px"}}><h2 style={{margin:"0%", padding:"0%"}}>Shop Women</h2><p style={{margin:"2%"}}><small>Lorem ipsum dolor sit amet</small></p></div>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--3">
-                            <img src={home2} alt="2" className="ImgWidth"></img>
-                            <div className="ImgBottom">Shop Men<p><small>Lorem ipsum dolor sit amet</small></p></div>
+                            <img src={home2} alt="2" className="ImgWidth" onClick={() => navigate(`/products`)}></img>
+                            <div className="ImgBottom"><h2 style={{margin:"0%", padding:"0%"}}>Shop Men</h2><p style={{margin:"2%"}}><small>Lorem ipsum dolor sit amet</small></p></div>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--3">
-                            <img src={home3} alt="3" className="ImgWidth"></img>
-                            <div className="ImgBottom">Jewellery<p><small>Lorem ipsum dolor sit amet</small></p></div>
+                            <img src={home3} alt="3" className="ImgWidth" onClick={() => navigate(`/products`)}></img>
+                            <div className="ImgBottom"><h2 style={{margin:"0%", padding:"0%"}}>Jewellery</h2><p style={{margin:"2%"}}><small>Lorem ipsum dolor sit amet</small></p></div>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 aem-GridColumn--tablet--3 ">
-                            <img src={home4} alt="4" className="ImgWidth"></img>
-                            <div className="ImgBottom">Electronics<p><small>Lorem ipsum dolor sit amet</small></p></div>
+                            <img src={home4} alt="4" className="ImgWidth" onClick={() => navigate(`/products`)}></img>
+                            <div className="ImgBottom"><h2 style={{margin:"0%", padding:"0%"}}>Electronics</h2><p style={{margin:"2%"}}><small>Lorem ipsum dolor sit amet</small></p></div>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Home = () => {
                                 <button className="shopcollbtn">SHOP COLLECTION</button>&nbsp;&nbsp;
                                 </div>
                                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 aem-GridColumn--tablet--6">
-                                <button className="shopbtn">SHOP NOW</button>
+                                <button className="shopbtn" onClick={() => navigate(`/products`)}>SHOP NOW</button>
                                 </div>
                             </div>
                         <img className="headerBorder" src={require('../../Images/max-width_header.svg').default} style={{marginTop:"3rem"}}></img>
